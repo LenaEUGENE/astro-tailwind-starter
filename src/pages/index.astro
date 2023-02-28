@@ -1,11 +1,84 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { Icon } from "astro-icon";
 ---
 
 <Layout title="Welcome to Astro.">
   <main>
-    <h1 class="text-5xl font-bold text-gray-800">
-      Welcome to <span class="text-pink-400">Astro</span>
-    </h1>
+    <!-- Section Hero -->
+    <div
+      class="relative flex min-h-screen flex-col justify-center overflow-hidden bg-[#FCF8F1] py-8 lg:py-12"
+    >
+      <section
+        aria-labelledby="hero-title"
+        class="bg-opacity-30 py-10 sm:py-16 lg:py-24"
+      >
+        <div class="container mx-auto w-[90%] max-w-[1344px]">
+          <div class="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
+            <div>
+              <p
+                class="text-base font-semibold uppercase tracking-wider text-purple-400"
+              >
+                All space travel in one place
+              </p>
+              <h1
+                id="hero-title"
+                class="display leading-snug mt-4 text-4xl font-bold text-gray-800 sm:text-6xl lg:mt-8 xl:text-8xl"
+              >
+                Choose your next space adventure
+              </h1>
+              <p
+                id="tagline"
+                class="mt-4 text-base text-gray-800 sm:text-xl lg:mt-8"
+              >
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Dignissimos doloribus reprehenderit blanditiis sed repellat, qui
+                repellendus quia id cum a?
+              </p>
+
+              <div class="cta space-x-4">
+                <a
+                  href="#"
+                  title=""
+                  class="mt-8 inline-flex items-center rounded-full bg-pink-300 px-6 py-4 font-semibold text-gray-800 transition-all duration-200 hover:bg-pink-400 focus:bg-pink-400 lg:mt-16"
+                  role="button"
+                >
+                  Start the process
+                  <svg
+                    class="ml-8 -mr-2 h-6 w-6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.5"
+                      d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                    ></path>
+                  </svg>
+                </a>
+
+                <a
+                  href="#"
+                  title=""
+                  class="text-gray-800 transition-all duration-200 hover:underline"
+                  >See what we have to offer</a
+                >
+              </div>
+            </div>
+
+            <div class="max-h-[40rem] overflow-clip rounded-2xl">
+              <img
+                class="w-full"
+                src="https://images.unsplash.com/photo-1615627121117-e3278bc8b1db?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2667&q=80"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
   </main>
 </Layout>
