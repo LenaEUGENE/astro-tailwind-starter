@@ -1,20 +1,20 @@
 {
-   "name": "coaching_by_josephine",
-   "packageManager": "yarn@3.4.1",
-   "version": "0.0.1",
-   "private": true,
-   "scripts": {
-      "dev": "astro dev",
-      "start": "astro dev",
-      "build": "astro build",
-      "preview": "astro preview",
-      "astro": "astro"
-   },
-   "devDependencies": {
-      "prettier": "^2.8.4",
-      "prettier-plugin-astro": "^0.8.0"
-   },
-   "dependencies": {
-      "astro": "latest"
-   }
+  "name": "astro_tailwind_starter",
+  "packageManager": "yarn@3.4.1",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.4",
+    "prettier-plugin-astro": "^0.8.0"
+  },
+  "dependencies": {
+    "astro": "latest"
+  }
 }
